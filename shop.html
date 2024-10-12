@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    
+<section class="product-categories">
+    <h2>Our Products</h2>
+    <div class="category-grid">
+        <div class="category">
+            <h3>Flooring</h3>
+            <img src="flooring.jpg" alt="Flooring">
+            <button onclick="addToCart('Luxury Wallpaper', 50)">Add to Cart</button>
+
+        </div>
+        <div class="category">
+            <h3>Wallpaper</h3>
+            <img src="wallpaper.jpg" alt="Wallpaper">
+            <button onclick="addToCart('Luxury Wallpaper', 50)">Add to Cart</button>
+
+        </div>
+        <div class="category">
+            <h3>Curtains</h3>
+            <img src="curtains.jpg" alt="Curtains">
+            <button onclick="addToCart('Luxury Wallpaper', 50)">Add to Cart</button>
+
+        </div>
+        <div class="category">
+            <h3>Tiles</h3>
+            <img src="tiles.jpg" alt="Tiles">
+            <button onclick="addToCart('Luxury Wallpaper', 50)">Add to Cart</button>
+
+        </div>
+    </div>
+</section>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL">
+    <input type="hidden" name="item_name_1" value="Luxury Wallpaper">
+    <input type="hidden" name="amount_1" value="50.00">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="submit" value="Checkout with PayPal">
+</form>
+
+</body>
+</html>
