@@ -47,3 +47,16 @@ function updateCart() {
         cartContainer.innerHTML += `<p>${product.name} - $${product.price}</p>`;
     });
 }
+
+
+
+////////
+
+function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.classList.contains('open')) {
+        sidebar.classList.remove('open');
+    } else {
+        sidebar.classList.add('open');
+    }
+}

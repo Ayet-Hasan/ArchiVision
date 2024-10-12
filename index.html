@@ -10,7 +10,7 @@
     <header>
         <div class="logo">Archi<span style="color: rgb(133, 193, 12);">V</span>ision</div>
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">About Us</a></li>
@@ -22,8 +22,24 @@
                      
                 <li><a href="register.html">Sign In</a></li>
             </ul>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
         </nav>
     </header>
+    <div class="sidebar" id="sidebar">
+        <ul class="sidebar-list">
+            <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                
+                     
+                <li><a href="register.html">Sign In</a></li>
+        </ul>
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+    </div>
 
     <section class="hero">
         <div class="hero-content">
